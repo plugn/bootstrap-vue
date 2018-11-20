@@ -6,6 +6,8 @@ import bButton from '../button/button'
 import './dropdown.css'
 // Needed when dropdowns are inside an input group
 import '../input-group/input-group.css'
+// Dropdown submenu
+import './dropdown-submenu.css'
 
 export default {
   mixins: [idMixin, dropdownMixin],

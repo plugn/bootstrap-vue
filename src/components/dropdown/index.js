@@ -3,6 +3,7 @@ import bDropdownItem from './dropdown-item'
 import bDropdownItemButton from './dropdown-item-button'
 import bDropdownHeader from './dropdown-header'
 import bDropdownDivider from './dropdown-divider'
+import bDropdownSubmenu from './dropdown-submenu'
 import { registerComponents, vueUse } from '../../utils/plugins'
 
 const components = {
@@ -10,6 +11,8 @@ const components = {
   bDd: bDropdown,
   bDropdownItem,
   bDdItem: bDropdownItem,
+  bDropdownSubmenu,
+  bDdSubmenu: bDropdownSubmenu,
   bDropdownItemButton,
   bDropdownItemBtn: bDropdownItemButton,
   bDdItemButton: bDropdownItemButton,
