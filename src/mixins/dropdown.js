@@ -14,6 +14,7 @@ function filterVisible (els) {
 // Dropdown item CSS selectors
 // TODO: .dropdown-form handling
 const Selector = {
+  SUBMENU: '.dropdown-submenu',
   FORM_CHILD: '.dropdown form',
   MENU: '.dropdown-menu',
   NAVBAR_NAV: '.navbar-nav',
