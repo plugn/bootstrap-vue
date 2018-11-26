@@ -3,6 +3,87 @@
 > Dropdowns are toggleable, contextual overlays for displaying lists of links and actions
 in a dropdown menu format.
 
+`Nested Dropdown`
+ 
+```html
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Expand at md</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample04">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown show">
+          <a class="nav-link dropdown-toggle" href="#open" id="navbarDropdownMenuLink"
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dr0pdown</a>
+
+          <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Submenu action</a>
+                <a class="dropdown-item" href="#">Another submenu action</a>
+
+                <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">01 SubSubMenu</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">01 Subsubmenu action</a>
+                    <a class="dropdown-item" href="#">01 Another subsubmenu action</a>
+                  </div>
+                </div>
+
+                <div class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">02 SubSubMenu</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">02nd Sub action</a>
+                    <a class="dropdown-item" href="#">02nd Sub another action</a>
+                  </div>
+                </div>
+
+                <SubMenu text="MyDrop">
+                  <MenuItem>ONE</MenuItem>
+                  <MenuItem>TWO</MenuItem>
+                </SubMenu>
+
+
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-md-0">
+        <input class="form-control" type="text" placeholder="Search">
+      </form>
+    </div>
+  </nav>
+  
+<!-- nested-dropdown.vue -->  
+```
+
+
 `<b-dropdown>` (or known by its shorter alias of `<b-dd>`) components are toggleable,
 contextual overlays for displaying lists of links and more. They’re toggled by
 clicking (or pressing space or enter when focused), not by hovering; this is an
@@ -13,7 +94,7 @@ clicking (or pressing space or enter when focused), not by hovering; this is an
   <b-dropdown id="ddown1" text="Dropdown Button" class="m-md-2">
     <b-dropdown-item>First Action</b-dropdown-item>
     <b-dropdown-item>Second Action</b-dropdown-item>
-    <b-dropdown-item>Third Action</b-dropdown-item>
+    <b-dropdown-item>Xhird Action</b-dropdown-item>
     <b-dropdown-divider></b-dropdown-divider>
     <b-dropdown-item>Something else here...</b-dropdown-item>
     <b-dropdown-item disabled>Disabled action</b-dropdown-item>
