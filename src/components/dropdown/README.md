@@ -15,23 +15,6 @@ in a dropdown menu format.
 
     <div class="collapse navbar-collapse" id="navbarsExample04">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown04">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
 
         <li class="nav-item dropdown show">
           <a class="nav-link dropdown-toggle" href="#open" id="navbarDropdownMenuLink"
@@ -62,10 +45,10 @@ in a dropdown menu format.
                   </div>
                 </div>
 
-                <SubMenu text="MyDrop">
-                  <MenuItem>ONE</MenuItem>
-                  <MenuItem>TWO</MenuItem>
-                </SubMenu>
+                <b-dropdown-submenu text="MyDrop">
+                  <b-dropdown-item>ONE</b-dropdown-item>
+                  <b-dropdown-item>TWO</b-dropdown-item>
+                </b-dropdown-submenu>
 
 
               </div>
@@ -74,9 +57,7 @@ in a dropdown menu format.
         </li>
 
       </ul>
-      <form class="form-inline my-2 my-md-0">
-        <input class="form-control" type="text" placeholder="Search">
-      </form>
+
     </div>
   </nav>
   
