@@ -4,8 +4,29 @@
 in a dropdown menu format.
 
 `Nested Dropdown`
- 
+
 ```html
+<div>
+  <b-navbar type="dark" variant="primary" toggleable>
+    <b-navbar-toggle target="nav_dropdown_collapse"></b-navbar-toggle>
+    <b-collapse is-nav id="nav_dropdown_collapse">
+      <b-navbar-nav>
+        <b-nav-item href="#">Home</b-nav-item>
+        <b-nav-item href="#">Link</b-nav-item>
+        <!-- Navbar dropdowns -->
+        <b-nav-item-dropdown text="Lang" right>
+          <b-dropdown-item href="#">EN</b-dropdown-item>
+          <b-dropdown-item href="#">ES</b-dropdown-item>
+          <b-dropdown-item href="#">RU</b-dropdown-item>
+          <b-dropdown-item href="#">FA</b-dropdown-item>
+        </b-nav-item-dropdown>
+        <b-nav-item-dropdown text="User" right>
+          <b-dropdown-item href="#">Account</b-dropdown-item>
+          <b-dropdown-item href="#">Settings</b-dropdown-item>
+        </b-nav-item-dropdown>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <a class="navbar-brand" href="#">Expand at md</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
@@ -16,15 +37,21 @@ in a dropdown menu format.
     <div class="collapse navbar-collapse" id="navbarsExample04">
       <ul class="navbar-nav mr-auto">
 
-        <li class="nav-item dropdown show">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#open" id="navbarDropdownMenuLink"
              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dr0pdown</a>
 
           <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
+
+            <b-dropdown-submenu text="MyDrop">
+              <b-dropdown-item>ONE</b-dropdown-item>
+              <b-dropdown-item>TWO</b-dropdown-item>
+            </b-dropdown-submenu>
+
             <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+              <a class="dropdown-item dropdown-toggle" href="#">SubmenOO</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Submenu action</a>
                 <a class="dropdown-item" href="#">Another submenu action</a>
@@ -45,12 +72,6 @@ in a dropdown menu format.
                   </div>
                 </div>
 
-                <b-dropdown-submenu text="MyDrop">
-                  <b-dropdown-item>ONE</b-dropdown-item>
-                  <b-dropdown-item>TWO</b-dropdown-item>
-                </b-dropdown-submenu>
-
-
               </div>
             </div>
           </div>
@@ -60,7 +81,7 @@ in a dropdown menu format.
 
     </div>
   </nav>
-  
+ </div> 
 <!-- nested-dropdown.vue -->  
 ```
 

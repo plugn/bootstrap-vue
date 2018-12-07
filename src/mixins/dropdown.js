@@ -220,6 +220,9 @@ export default {
           },
           flip: {
             enabled: !this.noFlip
+          },
+          computeStyle: {
+            enabled: false
           }
         }
       }
